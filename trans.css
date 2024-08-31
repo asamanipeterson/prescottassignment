@@ -1,0 +1,106 @@
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height:100vh;
+   margin: 0;
+}
+video{
+    position: absolute;
+    width:100%;
+}
+#weather-container{
+    background:rgba(255, 255, 255, .3);
+    width:400px;
+    padding: 20px;
+    border-radius:15px;
+    box-shadow: 0 8px 32px rgba(0,0,0, .1);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, .1);
+    align-items: center;
+    text-align: center;
+}
+h2,p,label{
+   color: #fff;
+   margin: 8px 0px; 
+}
+.input{
+    border-bottom:1px solid #4a494920;
+    width:100%;
+}
+input{
+    width:100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border:none;
+    outline: none;
+    margin-top: 20px;
+    background: none;
+    color:rgba(19, 19, 19, 0.387);
+    font-size:18px;
+}
+input::placeholder{
+    color:rgba(19, 19, 19, 0.387);
+    font-size:18px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top:20px;
+    background: 0;
+}
+button svg{
+    fill:#343333be;
+}
+button svg:hover{
+    fill: #ffffff43;
+    transition:1s;
+}
+#temp-div p{
+    font-size: 60px;
+    margin-top:-30px;
+}
+#weather-info{
+    font-size:20px;
+}
+#weather-icon{
+    width:200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    display:none;
+}
+#hourly-forecast{
+    margin-top:50px;
+    overflow-x: auto;
+    white-space:nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+.hourly-item{
+    flex:0 0 auto;
+    width:80px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-right:10px;
+    color: #fff;
+}
+.hourly-item img{
+    width:30px;
+    height: 30px;
+    margin-bottom:5px;
+}
+#hourly-heading{
+    color:white;
+    margin-top:10px;
+}
+.arrows{
+    position:absolute;
+    top:80%;
+}

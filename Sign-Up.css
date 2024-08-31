@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(16, 16, 16, 0.267), rgba(24, 24, 24, 0.227)),
+    url(weatherpics/1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.wrapper{
+    background: linear-gradient(rgba(19, 18, 18, 0.531), transparent);
+    height:50vh;
+    position: absolute;
+    top:0px;
+    width:100%;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:20px 0;
+    z-index: 999999;
+}
+.logo img{
+    width: 50px;
+}
+.nav-bar ul{
+    display: flex;
+    gap:40px;
+    list-style-type: none;
+    margin:0 20px;
+    width:100%;
+}
+.nav-bar ul li{
+    cursor: pointer;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size:18px;
+    font-weight: 500;
+}
+.nav-bar ul li::after{ 
+    content: '';
+    width:0%;
+    height: 2px;
+    display: block; 
+    background:#fff;
+    margin:10px 0 10px 0;
+}
+.nav-bar ul li:hover::after{
+    width:100%;
+    transition:2s ease;
+}
+#home::after{
+    content: '';
+    width:100%;
+    height: 2px;
+    display: block;
+    background:#fff;
+    margin:10px 0 10px 0;
+}
+button{
+    padding:10px;
+    border:0;
+    border-radius:25px;
+    width:120px;
+    font-size:15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+}
+button a{
+    font-size:15px;
+    text-decoration: none;
+    color:#000;
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.register-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    position:absolute;
+    top:320px;
+    left:5%;
+}
+.top{
+    position: relative;
+    color: #fff;
+    left:120px;
+}
+.top span{
+    font-size:14px;
+}
+.top span a{
+    font-size:14px;
+    color: #fff;
+}
+header{
+    font-size:38px;
+    margin:8px 0;
+    position: relative;
+    left:50px;
+}
+.input-box{
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width:512px;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    margin:0 0 20px 0;
+    align-items: center;
+}
+.input-box:hover{
+    background: rgba(255, 255, 255, 0.275);
+    transition:.5s;
+}
+input{
+    border: 0;
+    background: none;
+    width:512px;
+    outline: none;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+    font-size:16px;
+}
+.two-forms{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.inputs-box{
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width:230px;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    margin:0 0 20px 0;
+    align-items: center;
+}
+.inputs-box:hover{
+    background: rgba(255, 255, 255, 0.275);
+    transition:.5s;
+}
+
+svg{
+    width:20px;
+    margin:0 10px;
+    fill: #fff;
+    color: #fff;
+}
+
+.two-col{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left:-240px;
+    margin:20px 0;
+}
+
+.one label{
+    position: relative;
+    left:-250px;
+    color: #fff;
+    font-size:14px;
+}
+.two label a{
+    font-size:14px;
+    color: #fff;
+    text-decoration: none;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+.fa{
+    cursor: pointer;
+}
+#show{
+    display: none;
+}
+
